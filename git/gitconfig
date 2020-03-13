@@ -1,0 +1,5 @@
+[user]
+	email = hugo@wizacha.com
+	name = Hugo Casabella
+[core]
+	excludesfile = /home/hugo/.gitignore_global

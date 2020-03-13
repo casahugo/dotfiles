@@ -1,0 +1,10 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "xfce4/arc-flatabulous-theme"]
+	path = xfce4/arc-flatabulous-theme
+	url = https://github.com/andreisergiu98/arc-flatabulous-theme
+[submodule "xfce4/arc-icon-theme"]
+	path = xfce4/arc-icon-theme
+	url = https://github.com/horst3180/arc-icon-theme

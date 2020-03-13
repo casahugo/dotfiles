@@ -1,0 +1,30 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - 
+    command: cd xfce4/arc-flatabulous-theme && ./autogen.sh --prefix=/usr && sudo make install
+    description: Install arc-flatabulous-theme
+  - 
+    command: cd xfce4/arc-icon-theme && ./autogen.sh --prefix=/usr && sudo make install
+    description: Install arc-flatabulous-icon
+  - 
+    command: cp xfce4/xconf/ ~/.config/xfce4/xconf
+    description: Install xfce4 config    
+
+- link:
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc:
+      path: zsh/zshrc
+      force: true
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.config/autostart/indicator-application.desktop: xfce4/autostart/indicator-application.desktop
+    ~/.config/autostart/StartEnv.desktop: xfce4/autostart/StartEnv.desktop
+    ~/.config/autostart/VerticalScroll.desktop: xfce4/autostart/VerticalScroll.desktop
+    ~/images/Yosemite-Color-Block.png: Yosemite-Color-Block.png

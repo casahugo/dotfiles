@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="panels" type="array">
+    <value type="int" value="0"/>
+    <value type="int" value="1"/>
+    <property name="panel-0" type="empty">
+      <property name="position" type="string" value="p=8;x=1920;y=1062"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="6"/>
+        <value type="int" value="10"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
+        <value type="int" value="12"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-alpha" type="uint" value="80"/>
+      <property name="size" type="uint" value="35"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="65535"/>
+      </property>
+    </property>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=960;y=1060"/>
+      <property name="size" type="uint" value="35"/>
+      <property name="position-locked" type="bool" value="false"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="3"/>
+        <value type="int" value="7"/>
+      </property>
+      <property name="background-alpha" type="uint" value="80"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="length-adjust" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="false"/>
+    </property>
+    <property name="plugin-12" type="string" value="showdesktop"/>
+    <property name="plugin-6" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-7" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="0"/>
+      <property name="sort-order" type="uint" value="4"/>
+    </property>
+    <property name="plugin-3" type="string" value="whiskermenu"/>
+    <property name="plugin-10" type="string" value="indicator">
+      <property name="known-indicators" type="array">
+        <value type="string" value="libapplication.so"/>
+        <value type="string" value="libprintersmenu.so"/>
+        <value type="string" value="libappmenu.so"/>
+        <value type="string" value="com.canonical.indicator.session"/>
+        <value type="string" value="com.canonical.indicator.keyboard"/>
+        <value type="string" value="com.canonical.indicator.bluetooth"/>
+        <value type="string" value="com.canonical.indicator.sound"/>
+        <value type="string" value="com.canonical.indicator.power"/>
+        <value type="string" value="com.canonical.indicator.datetime"/>
+        <value type="string" value="com.canonical.indicator.messages"/>
+      </property>
+      <property name="blacklist" type="array">
+        <value type="string" value="com.canonical.indicator.session"/>
+        <value type="string" value="com.canonical.indicator.sound"/>
+        <value type="string" value="com.canonical.indicator.keyboard"/>
+        <value type="string" value="com.canonical.indicator.messages"/>
+        <value type="string" value="libappmenu.so"/>
+        <value type="string" value="com.canonical.indicator.bluetooth"/>
+        <value type="string" value="com.canonical.indicator.datetime"/>
+        <value type="string" value="com.canonical.indicator.power"/>
+        <value type="string" value="libprintersmenu.so"/>
+      </property>
+      <property name="align-left" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="mode-whitelist" type="bool" value="true"/>
+      <property name="whitelist" type="array">
+        <value type="string" value="com.canonical.indicator.bluetooth"/>
+        <value type="string" value="com.canonical.indicator.power"/>
+        <value type="string" value="libapplication.so"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance10001;chrome.instance10076;chrome.instance10121;chrome.instance10140;chrome.instance10232;chrome.instance10256;chrome.instance10289;chrome.instance10426;chrome.instance10438;chrome.instance10440;chrome.instance10511;chrome.instance10524;chrome.instance10550;chrome.instance10686;chrome.instance10690;chrome.instance10786;chrome.instance10863;chrome.instance10871;chrome.instance10932;chrome.instance11262;chrome.instance11293;chrome.instance11428;chrome.instance11437;chrome.instance11450;chrome.instance11517;chrome.instance11587;chrome.instance11805;chrome.instance12358;chrome.instance12498;chrome.instance13023;chrome.instance13611;chrome.instance13821;chrome.instance14272;chrome.instance14356;chrome.instance14541;chrome.instance15457;chrome.instance15976;chrome.instance16252;chrome.instance16475;chrome.instance16761;chrome.instance16982;chrome.instance17686;chrome.instance18812;chrome.instance19389;chrome.instance20085;chrome.instance20287;chrome.instance21109;chrome.instance21945;chrome.instance2196;chrome.instance22705;chrome.instance22756;chrome.instance22902;chrome.instance23747;chrome.instance23917;chrome.instance25164;chrome.instance25386;chrome.instance26339;chrome.instance2683;chrome.instance29593;chrome.instance29657;chrome.instance30436;chrome.instance32506;chrome.instance3484;chrome.instance365;chrome.instance3780;chrome.instance4027;chrome.instance4156;chrome.instance4235;chrome.instance4236;chrome.instance4377;chrome.instance4422;chrome.instance4622;chrome.instance4691;chrome.instance4714;chrome.instance4797;chrome.instance4834;chrome.instance4926;chrome.instance4979;chrome.instance5007;chrome.instance5010;chrome.instance5114;chrome.instance5232;chrome.instance5269;chrome.instance5363;chrome.instance5375;chrome.instance5477;chrome.instance5479;chrome.instance5484;chrome.instance5516;chrome.instance5532;chrome.instance5568;chrome.instance5572;chrome.instance5631;chrome.instance5686;chrome.instance5764;chrome.instance5800;chrome.instance5882;chrome.instance5932;chrome.instance5995;chrome.instance6011;chrome.instance6040;chrome.instance6128;chrome.instance6166;chrome.instance6228;chrome.instance6262;chrome.instance6276;chrome.instance6313;chrome.instance6326;chrome.instance6342;chrome.instance6498;chrome.instance6545;chrome.instance6568;chrome.instance6611;chrome.instance6614;chrome.instance6687;chrome.instance6721;chrome.instance6726;chrome.instance6728;chrome.instance6731;chrome.instance6734;chrome.instance6750;chrome.instance6771;chrome.instance6803;chrome.instance6813;chrome.instance6818;chrome.instance6825;chrome.instance6864;chrome.instance6950;chrome.instance6960;chrome.instance6962;chrome.instance6987;chrome.instance7032;chrome.instance7070;chrome.instance7143;chrome.instance7173;chrome.instance7179;chrome.instance7190;chrome.instance7204;chrome.instance7217;chrome.instance7220;chrome.instance7237;chrome.instance7253;chrome.instance7308;chrome.instance7315;chrome.instance7379;chrome.instance7527;chrome.instance7576;chrome.instance7589;chrome.instance7654;chrome.instance7692;chrome.instance7708;chrome.instance7752;chrome.instance7825;chrome.instance7866;chrome.instance7891;chrome.instance7897;chrome.instance7902;chrome.instance7905;chrome.instance7911;chrome.instance7950;chrome.instance7988;chrome.instance7991;chrome.instance7996;chrome.instance8026;chrome.instance8058;chrome.instance8069;chrome.instance8110;chrome.instance8221;chrome.instance8243;chrome.instance8247;chrome.instance8272;chrome.instance8290;chrome.instance8310;chrome.instance8313;chrome.instance8349;chrome.instance8370;chrome.instance8380;chrome.instance8386;chrome.instance8434;chrome.instance8555;chrome.instance8596;chrome.instance8656;chrome.instance8686;chrome.instance8700;chrome.instance8711;chrome.instance8822;chrome.instance8839;chrome.instance8852;chrome.instance8892;chrome.instance8951;chrome.instance8957;chrome.instance9105;chrome.instance9132;chrome.instance9159;chrome.instance9165;chrome.instance9180;chrome.instance9220;chrome.instance9228;chrome.instance9246;chrome.instance9248;chrome.instance9345;chrome.instance9390;chrome.instance9424;chrome.instance9437;chrome.instance9463;chrome.instance9470;chrome.instance9735;chrome.instance9812;chromium.instance10403;chromium.instance5091;chromium.instance5302;chromium.instance6729;chromium.instance7440;google-play-music-desktop-player;google_play_music_desktop_player;parole"/>
+    </property>
+    <property name="plugin-5" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+    </property>
+  </property>
+  <property name="configver" type="int" value="2"/>
+</channel>
