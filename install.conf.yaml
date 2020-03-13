@@ -1,21 +1,26 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ['~']
 
-
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - 
-    command: cd xfce4/arc-flatabulous-theme && ./autogen.sh --prefix=/usr && sudo make install
+    command: sudo apt install inkscape && cd xfce4/arc-flatabulous-theme && ./autogen.sh --prefix=/usr && sudo make install
     description: Install arc-flatabulous-theme
+    stdin: true
   - 
     command: cd xfce4/arc-icon-theme && ./autogen.sh --prefix=/usr && sudo make install
     description: Install arc-flatabulous-icon
   - 
-    command: cp xfce4/xconf/ ~/.config/xfce4/xconf
+    command: cp -R xfce4/xfconf/xfce-perchannel-xml/. ~/.config/xfce4/xfconf/xfce-perchannel-xml/
     description: Install xfce4 config    
+
+  - 
+    command: cp -R zsh/oh-my-zsh/. ~/.oh-my-zsh/
+    description: Install Oh My Zsh
 
 - link:
     ~/.tmux.conf: tmux/tmux.conf
@@ -25,6 +30,5 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.config/autostart/indicator-application.desktop: xfce4/autostart/indicator-application.desktop
-    ~/.config/autostart/StartEnv.desktop: xfce4/autostart/StartEnv.desktop
     ~/.config/autostart/VerticalScroll.desktop: xfce4/autostart/VerticalScroll.desktop
     ~/images/Yosemite-Color-Block.png: Yosemite-Color-Block.png
