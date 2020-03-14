@@ -9,7 +9,7 @@
 ## Installation
 
 ```
-$ git clone https://github.com/anthHugo/dotfiles.git ~/.dotfiles
+$ git clone git@github.com:anthHugo/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ git submodule update --init --recursive
 $ ./install

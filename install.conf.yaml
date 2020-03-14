@@ -11,6 +11,7 @@
     command: sudo apt install inkscape && cd xfce4/arc-flatabulous-theme && ./autogen.sh --prefix=/usr && sudo make install
     description: Install arc-flatabulous-theme
     stdin: true
+    stdout: true
   - 
     command: cd xfce4/arc-icon-theme && ./autogen.sh --prefix=/usr && sudo make install
     description: Install arc-flatabulous-icon
