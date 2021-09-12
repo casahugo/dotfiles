@@ -3,3 +3,19 @@
 	name = Hugo Casabella
 [core]
 	excludesfile = /home/hugo/.gitignore_global
+	pager = more
+[rerere]
+	enabled = 1
+
+[color]
+	ui = always
+
+[alias]
+	graph = log --oneline --decorate --all --graph
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg = log --oneline
+	st = status
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	pob = !git push origin `git branch --show-current`
