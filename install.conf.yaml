@@ -19,7 +19,10 @@
     stdout: true
   - 
     command: cp -R xfce4/xfconf/xfce-perchannel-xml/. ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-    description: Install xfce4 config 
+    description: Install xfce4 config
+  -
+    command: cp -R xfce4/panel/. ~/.config/xfce4/panel/
+    description: Install xfce4 menu
 
 - link:
     ~/.tmux.conf: tmux/tmux.conf
